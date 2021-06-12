@@ -39,11 +39,11 @@ function switchTheme(event) {
     if (event.target.checked) {
         rootElement.setAttribute('data-theme', 'dark')
         localStorage.setItem('theme', 'dark')
-        toggleDarkLightMode(true)
+        toggleDarkLightMode(isDark = true)
     } else {
         rootElement.setAttribute('data-theme', 'light')
         localStorage.setItem('theme', 'light')
-        toggleDarkLightMode(false)
+        toggleDarkLightMode(isDark = false)
     }
 }
 
